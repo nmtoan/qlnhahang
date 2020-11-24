@@ -9,4 +9,10 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="colorPrimaryDark">#1d2557</color>
+
+    <color name="green">#00bfa5</color>
+    <color name="purple">#7c4dff</color>
+    <color name="yellow">#ffb300</color>
+    <color name="pinky">#fe104d</color>
+
 </resources>

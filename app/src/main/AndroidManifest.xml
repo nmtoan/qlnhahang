@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.QuanLyNhaHang">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".NavigationActivity"
+            android:label="@string/title_activity_navigation"
+            android:theme="@style/Theme.QuanLyNhaHang.NoActionBar"></activity>
+        <activity android:name=".MainActivity3" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".DangNhapActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
