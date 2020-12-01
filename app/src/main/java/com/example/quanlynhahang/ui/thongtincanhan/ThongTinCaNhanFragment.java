@@ -23,13 +23,13 @@ public class ThongTinCaNhanFragment extends Fragment {
         thongTinCaNhanViewModel =
                 new ViewModelProvider(this).get(ThongTinCaNhanViewModel.class);
         View root = inflater.inflate(R.layout.fragment_thongtincanhan, container, false);
-        final TextView textView = root.findViewById(R.id.text_thongtincanhan);
-        thongTinCaNhanViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+//        final TextView textView = root.findViewById(R.id.text_thongtincanhan);
+//        thongTinCaNhanViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+//            @Override
+//            public void onChanged(@Nullable String s) {
+//                textView.setText(s);
+//            }
+//        });
         return root;
     }
 }

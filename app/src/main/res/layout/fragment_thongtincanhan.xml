@@ -6,17 +6,64 @@
     android:layout_height="match_parent"
     tools:context=".ui.thongtincanhan.ThongTinCaNhanFragment">
 
-    <TextView
-        android:id="@+id/text_thongtincanhan"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="25dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtHoTen"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="15dp"
+                android:hint="Nhập họ tên"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black" />
+
+            <Spinner
+                android:id="@+id/spnGioiTinh"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="15dp"
+                android:entries="@array/gioitinh"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/edtSoDienThoai"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="15dp"
+                android:hint="Nhập số điện thoại"
+                android:inputType="phone"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="15dp"
+                android:hint="Nhập email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtChucVu"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="15dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:text="Chức vụ" />
+        </LinearLayout>
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
